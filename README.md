@@ -1,0 +1,2 @@
+# checkout-integration
+integrate checkout
