@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://ui-app.com/_next/static/css/d710757221f9990f.css" data-precedence="next" />
+    <link rel="preload" as="script" fetchpriority="low"
+        href="https://ui-app.com/_next/static/chunks/webpack-e0711c99f8175119.js" />
+    <script src="https://ui-app.com/_next/static/chunks/ccbed758-2bb99e1a74a0bf8a.js" async=""></script>
+    <script src="https://ui-app.com/_next/static/chunks/767-d55feef66c6e92de.js" async=""></script>
+    <script src="https://ui-app.com/_next/static/chunks/main-app-2f94abf49b73fc0d.js" async=""></script>
+    <script src="https://ui-app.com/_next/static/chunks/751-704d03f6384cc4a8.js" async=""></script>
+    <script src="https://ui-app.com/_next/static/chunks/273-57e5242b48751e07.js" async=""></script>
+    <script src="https://ui-app.com/_next/static/chunks/235-4a75e309d18aff6c.js" async=""></script>
+    <script src="https://ui-app.com/_next/static/chunks/355-8ad1cdf67285d550.js" async=""></script>
+    <script src="https://ui-app.com/_next/static/chunks/870-937fdced427dbe39.js" async=""></script>
+    <script src="https://ui-app.com/_next/static/chunks/app/layout-aef64f39931b99da.js" async=""></script>
+    <script src="https://user.ui-app.com/shop-auth.js" async=""></script>
+    <meta name="next-size-adjust" content="" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ui-app.com/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="https://ui-app.com/favicon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="https://ui-app.com/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ui-app.com/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ui-app.com/favicon-16x16.png" />
+    <link rel="manifest" href="https://ui-app.com/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="https://ui-app.com/favicon.ico" type="image/x-icon" sizes="32x32" />
+    <script src="https://ui-app.com/_next/static/chunks/polyfills-42372ed130431b0a.js" nomodule=""></script>
+    <style type="text/css">
+        :where(html[dir="ltr"]),
+        :where([data-sonner-toaster][dir="ltr"]) {
+            --toast-icon-margin-start: -3px;
+            --toast-icon-margin-end: 4px;
+            --toast-svg-margin-start: -1px;
+            --toast-svg-margin-end: 0px;
+            --toast-button-margin-start: auto;
+            --toast-button-margin-end: 0;
+            --toast-close-button-start: 0;
+            --toast-close-button-end: unset;
+            --toast-close-button-transform: translate(-35%, -35%);
+        }
+
+        :where(html[dir="rtl"]),
+        :where([data-sonner-toaster][dir="rtl"]) {
+            --toast-icon-margin-start: 4px;
+            --toast-icon-margin-end: -3px;
+            --toast-svg-margin-start: 0px;
+            --toast-svg-margin-end: -1px;
+            --toast-button-margin-start: 0;
+            --toast-button-margin-end: auto;
+            --toast-close-button-start: unset;
+            --toast-close-button-end: 0;
+            --toast-close-button-transform: translate(35%, -35%);
+        }
+
+        :where([data-sonner-toaster]) {
+            position: fixed;
+            width: var(--width);
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+                Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            --gray1: hsl(0, 0%, 99%);
+            --gray2: hsl(0, 0%, 97.3%);
+            --gray3: hsl(0, 0%, 95.1%);
+            --gray4: hsl(0, 0%, 93%);
+            --gray5: hsl(0, 0%, 90.9%);
+            --gray6: hsl(0, 0%, 88.7%);
+            --gray7: hsl(0, 0%, 85.8%);
+            --gray8: hsl(0, 0%, 78%);
+            --gray9: hsl(0, 0%, 56.1%);
+            --gray10: hsl(0, 0%, 52.3%);
+            --gray11: hsl(0, 0%, 43.5%);
+            --gray12: hsl(0, 0%, 9%);
+            --border-radius: 8px;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            outline: none;
+            z-index: 999999999;
+            transition: transform 0.4s ease;
+        }
+
+        :where([data-sonner-toaster][data-lifted="true"]) {
+            transform: translateY(-10px);
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+            :where([data-sonner-toaster][data-lifted="true"]) {
+                transform: none;
+            }
+        }
+
+        :where([data-sonner-toaster][data-x-position="right"]) {
+            right: var(--offset-right);
+        }
+
+        :where([data-sonner-toaster][data-x-position="left"]) {
+            left: var(--offset-left);
+        }
+
+        :where([data-sonner-toaster][data-x-position="center"]) {
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        :where([data-sonner-toaster][data-y-position="top"]) {
+            top: var(--offset-top);
+        }
+
+        :where([data-sonner-toaster][data-y-position="bottom"]) {
+            bottom: var(--offset-bottom);
+        }
+
+        :where([data-sonner-toast]) {
+            --y: translateY(100%);
+            --lift-amount: calc(var(--lift) * var(--gap));
+            z-index: var(--z-index);
+            position: absolute;
+            opacity: 0;
+            transform: var(--y);
+            filter: blur(0);
+            touch-action: none;
+            transition: transform 0.4s, opacity 0.4s, height 0.4s, box-shadow 0.2s;
+            box-sizing: border-box;
+            outline: none;
+            overflow-wrap: anywhere;
+        }
+
+        :where([data-sonner-toast][data-styled="true"]) {
+            padding: 16px;
+            background: var(--normal-bg);
+            border: 1px solid var(--normal-border);
+            color: var(--normal-text);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 12px #0000001a;
+            width: var(--width);
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        :where([data-sonner-toast]:focus-visible) {
+            box-shadow: 0 4px 12px #0000001a, 0 0 0 2px #0003;
+        }
+
+        :where([data-sonner-toast][data-y-position="top"]) {
+            top: 0;
+            --y: translateY(-100%);
+            --lift: 1;
+            --lift-amount: calc(1 * var(--gap));
+        }
+
+        :where([data-sonner-toast][data-y-position="bottom"]) {
+            bottom: 0;
+            --y: translateY(100%);
+            --lift: -1;
+            --lift-amount: calc(var(--lift) * var(--gap));
+        }
+
+        :where([data-sonner-toast]) :where([data-description]) {
+            font-weight: 400;
+            line-height: 1.4;
+            color: inherit;
+        }
+
+        :where([data-sonner-toast]) :where([data-title]) {
+            font-weight: 500;
+            line-height: 1.5;
+            color: inherit;
+        }
+
+        :where([data-sonner-toast]) :where([data-icon]) {
+            display: flex;
+            height: 16px;
+            width: 16px;
+            position: relative;
+            justify-content: flex-start;
+            align-items: center;
+            flex-shrink: 0;
+            margin-left: var(--toast-icon-margin-start);
+            margin-right: var(--toast-icon-margin-end);
+        }
+
+        :where([data-sonner-toast][data-promise="true"]) :where([data-icon])>svg {
+            opacity: 0;
+            transform: scale(0.8);
+            transform-origin: center;
+            animation: sonner-fade-in 0.3s ease forwards;
+        }
+
+        :where([data-sonner-toast]) :where([data-icon])>* {
+            flex-shrink: 0;
+        }
+
+        :where([data-sonner-toast]) :where([data-icon]) svg {
+            margin-left: var(--toast-svg-margin-start);
+            margin-right: var(--toast-svg-margin-end);
+        }
+
+        :where([data-sonner-toast]) :where([data-content]) {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        [data-sonner-toast][data-styled="true"] [data-button] {
+            border-radius: 4px;
+            padding-left: 8px;
+            padding-right: 8px;
+            height: 24px;
+            font-size: 12px;
+            color: var(--normal-bg);
+            background: var(--normal-text);
+            margin-left: var(--toast-button-margin-start);
+            margin-right: var(--toast-button-margin-end);
+            border: none;
+            cursor: pointer;
+            outline: none;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            transition: opacity 0.4s, box-shadow 0.2s;
+        }
+
+        :where([data-sonner-toast]) :where([data-button]):focus-visible {
+            box-shadow: 0 0 0 2px #0006;
+        }
+
+        :where([data-sonner-toast]) :where([data-button]):first-of-type {
+            margin-left: var(--toast-button-margin-start);
+            margin-right: var(--toast-button-margin-end);
+        }
+
+        :where([data-sonner-toast]) :where([data-cancel]) {
+            color: var(--normal-text);
+            background: rgba(0, 0, 0, 0.08);
+        }
+
+        :where([data-sonner-toast][data-theme="dark"]) :where([data-cancel]) {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        :where([data-sonner-toast]) :where([data-close-button]) {
+            position: absolute;
+            left: var(--toast-close-button-start);
+            right: var(--toast-close-button-end);
+            top: 0;
+            height: 20px;
+            width: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            color: var(--gray12);
+            border: 1px solid var(--gray4);
+            transform: var(--toast-close-button-transform);
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1;
+            transition: opacity 0.1s, background 0.2s, border-color 0.2s;
+        }
+
+        [data-sonner-toast] [data-close-button] {
+            background: var(--gray1);
+        }
+
+        :where([data-sonner-toast]) :where([data-close-button]):focus-visible {
+            box-shadow: 0 4px 12px #0000001a, 0 0 0 2px #0003;
+        }
+
+        :where([data-sonner-toast]) :where([data-disabled="true"]) {
+            cursor: not-allowed;
+        }
+
+        :where([data-sonner-toast]):hover :where([data-close-button]):hover {
+            background: var(--gray2);
+            border-color: var(--gray5);
+        }
+
+        :where([data-sonner-toast][data-swiping="true"]):before {
+            content: "";
+            position: absolute;
+            left: -50%;
+            right: -50%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        :where([data-sonner-toast][data-y-position="top"][data-swiping="true"]):before {
+            bottom: 50%;
+            transform: scaleY(3) translateY(50%);
+        }
+
+        :where([data-sonner-toast][data-y-position="bottom"][data-swiping="true"]):before {
+            top: 50%;
+            transform: scaleY(3) translateY(-50%);
+        }
+
+        :where([data-sonner-toast][data-swiping="false"][data-removed="true"]):before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            transform: scaleY(2);
+        }
+
+        :where([data-sonner-toast]):after {
+            content: "";
+            position: absolute;
+            left: 0;
+            height: calc(var(--gap) + 1px);
+            bottom: 100%;
+            width: 100%;
+        }
+
+        :where([data-sonner-toast][data-mounted="true"]) {
+            --y: translateY(0);
+            opacity: 1;
+        }
+
+        :where([data-sonner-toast][data-expanded="false"][data-front="false"]) {
+            --scale: var(--toasts-before) * 0.05 + 1;
+            --y: translateY(calc(var(--lift-amount) * var(--toasts-before))) scale(calc(-1 * var(--scale)));
+            height: var(--front-toast-height);
+        }
+
+        :where([data-sonner-toast])>* {
+            transition: opacity 0.4s;
+        }
+
+        :where([data-sonner-toast][data-expanded="false"][data-front="false"][data-styled="true"])>* {
+            opacity: 0;
+        }
+
+        :where([data-sonner-toast][data-visible="false"]) {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        :where([data-sonner-toast][data-mounted="true"][data-expanded="true"]) {
+            --y: translateY(calc(var(--lift) * var(--offset)));
+            height: var(--initial-height);
+        }
+
+        :where([data-sonner-toast][data-removed="true"][data-front="true"][data-swipe-out="false"]) {
+            --y: translateY(calc(var(--lift) * -100%));
+            opacity: 0;
+        }
+
+        :where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="true"]) {
+            --y: translateY(calc(var(--lift) * var(--offset) + var(--lift) * -100%));
+            opacity: 0;
+        }
+
+        :where([data-sonner-toast][data-removed="true"][data-front="false"][data-swipe-out="false"][data-expanded="false"]) {
+            --y: translateY(40%);
+            opacity: 0;
+            transition: transform 0.5s, opacity 0.2s;
+        }
+
+        :where([data-sonner-toast][data-removed="true"][data-front="false"]):before {
+            height: calc(var(--initial-height) + 20%);
+        }
+
+        [data-sonner-toast][data-swiping="true"] {
+            transform: var(--y) translateY(var(--swipe-amount-y, 0px)) translate(var(--swipe-amount-x, 0px));
+            transition: none;
+        }
+
+        [data-sonner-toast][data-swiped="true"] {
+            user-select: none;
+        }
+
+        [data-sonner-toast][data-swipe-out="true"][data-y-position="bottom"],
+        [data-sonner-toast][data-swipe-out="true"][data-y-position="top"] {
+            animation-duration: 0.2s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+        }
+
+        [data-sonner-toast][data-swipe-out="true"][data-swipe-direction="left"] {
+            animation-name: swipe-out-left;
+        }
+
+        [data-sonner-toast][data-swipe-out="true"][data-swipe-direction="right"] {
+            animation-name: swipe-out-right;
+        }
+
+        [data-sonner-toast][data-swipe-out="true"][data-swipe-direction="up"] {
+            animation-name: swipe-out-up;
+        }
+
+        [data-sonner-toast][data-swipe-out="true"][data-swipe-direction="down"] {
+            animation-name: swipe-out-down;
+        }
+
+        @keyframes swipe-out-left {
+            0% {
+                transform: var(--y) translate(var(--swipe-amount-x));
+                opacity: 1;
+            }
+
+            to {
+                transform: var(--y) translate(calc(var(--swipe-amount-x) - 100%));
+                opacity: 0;
+            }
+        }
+
+        @keyframes swipe-out-right {
+            0% {
+                transform: var(--y) translate(var(--swipe-amount-x));
+                opacity: 1;
+            }
+
+            to {
+                transform: var(--y) translate(calc(var(--swipe-amount-x) + 100%));
+                opacity: 0;
+            }
+        }
+
+        @keyframes swipe-out-up {
+            0% {
+                transform: var(--y) translateY(var(--swipe-amount-y));
+                opacity: 1;
+            }
+
+            to {
+                transform: var(--y) translateY(calc(var(--swipe-amount-y) - 100%));
+                opacity: 0;
+            }
+        }
+
+        @keyframes swipe-out-down {
+            0% {
+                transform: var(--y) translateY(var(--swipe-amount-y));
+                opacity: 1;
+            }
+
+            to {
+                transform: var(--y) translateY(calc(var(--swipe-amount-y) + 100%));
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 600px) {
+            [data-sonner-toaster] {
+                position: fixed;
+                right: var(--mobile-offset-right);
+                left: var(--mobile-offset-left);
+                width: 100%;
+            }
+
+            [data-sonner-toaster][dir="rtl"] {
+                left: calc(var(--mobile-offset-left) * -1);
+            }
+
+            [data-sonner-toaster] [data-sonner-toast] {
+                left: 0;
+                right: 0;
+                width: calc(100% - var(--mobile-offset-left) * 2);
+            }
+
+            [data-sonner-toaster][data-x-position="left"] {
+                left: var(--mobile-offset-left);
+            }
+
+            [data-sonner-toaster][data-y-position="bottom"] {
+                bottom: var(--mobile-offset-bottom);
+            }
+
+            [data-sonner-toaster][data-y-position="top"] {
+                top: var(--mobile-offset-top);
+            }
+
+            [data-sonner-toaster][data-x-position="center"] {
+                left: var(--mobile-offset-left);
+                right: var(--mobile-offset-right);
+                transform: none;
+            }
+        }
+
+        [data-sonner-toaster][data-theme="light"] {
+            --normal-bg: #fff;
+            --normal-border: var(--gray4);
+            --normal-text: var(--gray12);
+            --success-bg: hsl(143, 85%, 96%);
+            --success-border: hsl(145, 92%, 91%);
+            --success-text: hsl(140, 100%, 27%);
+            --info-bg: hsl(208, 100%, 97%);
+            --info-border: hsl(221, 91%, 91%);
+            --info-text: hsl(210, 92%, 45%);
+            --warning-bg: hsl(49, 100%, 97%);
+            --warning-border: hsl(49, 91%, 91%);
+            --warning-text: hsl(31, 92%, 45%);
+            --error-bg: hsl(359, 100%, 97%);
+            --error-border: hsl(359, 100%, 94%);
+            --error-text: hsl(360, 100%, 45%);
+        }
+
+        [data-sonner-toaster][data-theme="light"] [data-sonner-toast][data-invert="true"] {
+            --normal-bg: #000;
+            --normal-border: hsl(0, 0%, 20%);
+            --normal-text: var(--gray1);
+        }
+
+        [data-sonner-toaster][data-theme="dark"] [data-sonner-toast][data-invert="true"] {
+            --normal-bg: #fff;
+            --normal-border: var(--gray3);
+            --normal-text: var(--gray12);
+        }
+
+        [data-sonner-toaster][data-theme="dark"] {
+            --normal-bg: #000;
+            --normal-bg-hover: hsl(0, 0%, 12%);
+            --normal-border: hsl(0, 0%, 20%);
+            --normal-border-hover: hsl(0, 0%, 25%);
+            --normal-text: var(--gray1);
+            --success-bg: hsl(150, 100%, 6%);
+            --success-border: hsl(147, 100%, 12%);
+            --success-text: hsl(150, 86%, 65%);
+            --info-bg: hsl(215, 100%, 6%);
+            --info-border: hsl(223, 100%, 12%);
+            --info-text: hsl(216, 87%, 65%);
+            --warning-bg: hsl(64, 100%, 6%);
+            --warning-border: hsl(60, 100%, 12%);
+            --warning-text: hsl(46, 87%, 65%);
+            --error-bg: hsl(358, 76%, 10%);
+            --error-border: hsl(357, 89%, 16%);
+            --error-text: hsl(358, 100%, 81%);
+        }
+
+        [data-sonner-toaster][data-theme="dark"] [data-sonner-toast] [data-close-button] {
+            background: var(--normal-bg);
+            border-color: var(--normal-border);
+            color: var(--normal-text);
+        }
+
+        [data-sonner-toaster][data-theme="dark"] [data-sonner-toast] [data-close-button]:hover {
+            background: var(--normal-bg-hover);
+            border-color: var(--normal-border-hover);
+        }
+
+        [data-rich-colors="true"][data-sonner-toast][data-type="success"],
+        [data-rich-colors="true"][data-sonner-toast][data-type="success"] [data-close-button] {
+            background: var(--success-bg);
+            border-color: var(--success-border);
+            color: var(--success-text);
+        }
+
+        [data-rich-colors="true"][data-sonner-toast][data-type="info"],
+        [data-rich-colors="true"][data-sonner-toast][data-type="info"] [data-close-button] {
+            background: var(--info-bg);
+            border-color: var(--info-border);
+            color: var(--info-text);
+        }
+
+        [data-rich-colors="true"][data-sonner-toast][data-type="warning"],
+        [data-rich-colors="true"][data-sonner-toast][data-type="warning"] [data-close-button] {
+            background: var(--warning-bg);
+            border-color: var(--warning-border);
+            color: var(--warning-text);
+        }
+
+        [data-rich-colors="true"][data-sonner-toast][data-type="error"],
+        [data-rich-colors="true"][data-sonner-toast][data-type="error"] [data-close-button] {
+            background: var(--error-bg);
+            border-color: var(--error-border);
+            color: var(--error-text);
+        }
+
+        .sonner-loading-wrapper {
+            --size: 16px;
+            height: var(--size);
+            width: var(--size);
+            position: absolute;
+            inset: 0;
+            z-index: 10;
+        }
+
+        .sonner-loading-wrapper[data-visible="false"] {
+            transform-origin: center;
+            animation: sonner-fade-out 0.2s ease forwards;
+        }
+
+        .sonner-spinner {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            height: var(--size);
+            width: var(--size);
+        }
+
+        .sonner-loading-bar {
+            animation: sonner-spin 1.2s linear infinite;
+            background: var(--gray11);
+            border-radius: 6px;
+            height: 8%;
+            left: -10%;
+            position: absolute;
+            top: -3.9%;
+            width: 24%;
+        }
+
+        .sonner-loading-bar:nth-child(1) {
+            animation-delay: -1.2s;
+            transform: rotate(0.0001deg) translate(146%);
+        }
+
+        .sonner-loading-bar:nth-child(2) {
+            animation-delay: -1.1s;
+            transform: rotate(30deg) translate(146%);
+        }
+
+        .sonner-loading-bar:nth-child(3) {
+            animation-delay: -1s;
+            transform: rotate(60deg) translate(146%);
+        }
+
+        .sonner-loading-bar:nth-child(4) {
+            animation-delay: -0.9s;
+            transform: rotate(90deg) translate(146%);
+        }
+
+        .sonner-loading-bar:nth-child(5) {
+            animation-delay: -0.8s;
+            transform: rotate(120deg) translate(146%);
+        }
+
+        .sonner-loading-bar:nth-child(6) {
+            animation-delay: -0.7s;
+            transform: rotate(150deg) translate(146%);
+        }
+
+        .sonner-loading-bar:nth-child(7) {
+            animation-delay: -0.6s;
+            transform: rotate(180deg) translate(146%);
+        }
+
+        .sonner-loading-bar:nth-child(8) {
+            animation-delay: -0.5s;
+            transform: rotate(210deg) translate(146%);
+        }
+
+        .sonner-loading-bar:nth-child(9) {
+            animation-delay: -0.4s;
+            transform: rotate(240deg) translate(146%);
+        }
+
+        .sonner-loading-bar:nth-child(10) {
+            animation-delay: -0.3s;
+            transform: rotate(270deg) translate(146%);
+        }
+
+        .sonner-loading-bar:nth-child(11) {
+            animation-delay: -0.2s;
+            transform: rotate(300deg) translate(146%);
+        }
+
+        .sonner-loading-bar:nth-child(12) {
+            animation-delay: -0.1s;
+            transform: rotate(330deg) translate(146%);
+        }
+
+        @keyframes sonner-fade-in {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes sonner-fade-out {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            to {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+        }
+
+        @keyframes sonner-spin {
+            0% {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0.15;
+            }
+        }
+
+        @media (prefers-reduced-motion) {
+
+            [data-sonner-toast],
+            [data-sonner-toast]>*,
+            .sonner-loading-bar {
+                transition: none !important;
+                animation: none !important;
+            }
+        }
+
+        .sonner-loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transform-origin: center;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+
+        .sonner-loader[data-visible="false"] {
+            opacity: 0;
+            transform: scale(0.8) translate(-50%, -50%);
+        }
+    </style>
+    <link rel="preload" href="https://ui-app.com/_next/static/media/a34f9d1faa5f3315-s.p.woff2" as="font" crossorigin=""
+        type="font/woff2" />
+    <link rel="preconnect" href="https://user.ui-app.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://vendor.ui-app.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://storage.googleapis.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://media-data-web-glob.storage.googleapis.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://js.stripe.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://api.stripe.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://q.stripe.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://m.stripe.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://connect.stripe.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://marketplace.stripe.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://docs.stripe.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://support.stripe.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://stripe.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://dashboard.stripe.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://support-conversations.stripe.com" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://api.iconify.design" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://cse.google.com/cse?cx=51ea4d8b72dff497c" crossorigin="anonymous" />
+    <link rel="dns-prefetch" href="//vendor.ui-app.com" />
+    <link rel="dns-prefetch" href="//storage.googleapis.com" />
+    <link rel="dns-prefetch" href="//media-data-web-glob.storage.googleapis.com" />
+    <link rel="dns-prefetch" href="//js.stripe.com" />
+    <link rel="dns-prefetch" href="//api.stripe.com" />
+    <link rel="dns-prefetch" href="//q.stripe.com" />
+    <link rel="dns-prefetch" href="//m.stripe.com" />
+    <link rel="dns-prefetch" href="//connect.stripe.com" />
+    <link rel="dns-prefetch" href="//marketplace.stripe.com" />
+    <link rel="dns-prefetch" href="//docs.stripe.com" />
+    <link rel="dns-prefetch" href="//support.stripe.com" />
+    <link rel="dns-prefetch" href="//stripe.com" />
+    <link rel="dns-prefetch" href="//dashboard.stripe.com" />
+    <link rel="dns-prefetch" href="//support-conversations.stripe.com" />
+    <link rel="dns-prefetch" href="//user.ui-app.com" />
+    <link rel="dns-prefetch" href="//api.iconify.design" />
+    <link rel="dns-prefetch" href="//cse.google.com/cse?cx=51ea4d8b72dff497c" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+</head>
+
+<body class="flex min-h-svh flex-col antialiased __className_d65c78">
+    <header class="bg-background sticky top-0 z-20 border-b">
+        <div class="mx-auto flex h-16 max-w-screen-xl items-center gap-4 px-4">
+            <div class="mr-7 flex items-center gap-3">
+                <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground border-border size-8 shrink-0 border md:hidden"
+                    data-state="closed" type="button" aria-haspopup="dialog" aria-expanded="false"
+                    aria-controls="radix-:R1adb:">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-menu size-4">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg><span class="sr-only">Menu</span></button><svg class="size-8" width="512" height="512"
+                    viewBox="0 0 384 384" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify">
+                    <defs>
+                        <clipPath id="a15c7ebe79">
+                            <path d="M 25.679688 0 L 358.316406 0 L 358.316406 288 L 25.679688 288 Z M 25.679688 0 "
+                                clip-rule="nonzero"></path>
+                        </clipPath>
+                        <clipPath id="92b9c54d1b">
+                            <path
+                                d="M 57.816406 110.578125 L 62.113281 110.578125 L 62.113281 114.222656 L 57.816406 114.222656 Z M 57.816406 110.578125 "
+                                clip-rule="nonzero"></path>
+                        </clipPath>
+                        <clipPath id="0ee4200467">
+                            <path
+                                d="M 62.101562 111.898438 C 60.148438 114.898438 58.351562 114.375 57.976562 113.699219 C 57.601562 113.101562 57.976562 111.226562 58.5 110.773438 C 59.101562 110.324219 61.5 110.925781 61.5 110.925781 "
+                                clip-rule="nonzero"></path>
+                        </clipPath>
+                        <clipPath id="797295b681">
+                            <path
+                                d="M 58.675781 109.714844 L 62.9375 109.714844 L 62.9375 113.359375 L 58.675781 113.359375 Z M 58.675781 109.714844 "
+                                clip-rule="nonzero"></path>
+                        </clipPath>
+                        <clipPath id="6595017cc0">
+                            <path
+                                d="M 62.925781 111 C 61.050781 114 59.25 113.476562 58.875 112.875 C 58.5 112.199219 58.800781 110.398438 59.398438 109.875 C 60 109.425781 62.398438 110.101562 62.398438 110.101562 "
+                                clip-rule="nonzero"></path>
+                        </clipPath>
+                        <clipPath id="6012a80fa0">
+                            <path
+                                d="M 56.953125 111.441406 L 61.210938 111.441406 L 61.210938 115.046875 L 56.953125 115.046875 Z M 56.953125 111.441406 "
+                                clip-rule="nonzero"></path>
+                        </clipPath>
+                        <clipPath id="54cb4dfc24">
+                            <path
+                                d="M 61.199219 112.726562 C 59.324219 115.726562 57.523438 115.199219 57.148438 114.523438 C 56.773438 113.925781 57.074219 112.050781 57.675781 111.601562 C 58.273438 111.148438 60.675781 111.824219 60.675781 111.824219 "
+                                clip-rule="nonzero"></path>
+                        </clipPath>
+                        <clipPath id="591a41801c">
+                            <path
+                                d="M 53.234375 108.480469 L 60.914062 108.480469 L 60.914062 120.050781 L 53.234375 120.050781 Z M 53.234375 108.480469 "
+                                clip-rule="nonzero"></path>
+                        </clipPath>
+                        <clipPath id="f736686dc1">
+                            <path
+                                d="M 60.824219 111.523438 C 56.25 120.074219 54.898438 120.074219 54.300781 119.625 C 53.625 119.25 53.175781 117.675781 53.398438 116.925781 C 53.550781 116.25 54.375 115.574219 54.976562 115.351562 C 55.648438 115.199219 56.699219 115.425781 57.148438 115.875 C 57.675781 116.324219 58.050781 117.300781 57.976562 117.976562 C 57.898438 118.648438 57.300781 119.476562 56.699219 119.773438 C 56.175781 120.148438 55.050781 120.074219 54.449219 119.773438 C 53.925781 119.476562 53.324219 118.800781 53.25 117.898438 C 53.101562 116.175781 55.574219 110.925781 56.699219 109.574219 C 57.148438 108.976562 57.523438 108.75 57.976562 108.601562 C 58.5 108.449219 59.175781 108.523438 59.625 108.75 C 60.074219 108.976562 60.601562 109.425781 60.75 109.875 C 60.976562 110.398438 60.824219 111.523438 60.824219 111.523438 "
+                                clip-rule="nonzero"></path>
+                        </clipPath>
+                        <clipPath id="2b59e0a0f6">
+                            <path
+                                d="M 56.675781 108.09375 L 64.769531 108.09375 L 64.769531 120.101562 L 56.675781 120.101562 Z M 56.675781 108.09375 "
+                                clip-rule="nonzero"></path>
+                        </clipPath>
+                        <clipPath id="03ae24b048">
+                            <path
+                                d="M 64.726562 110.925781 C 59.851562 120.074219 59.023438 120.226562 58.425781 120 C 57.675781 119.699219 56.773438 118.425781 56.699219 117.675781 C 56.625 117 57.148438 116.023438 57.75 115.726562 C 58.425781 115.351562 60.074219 115.425781 60.601562 115.875 C 61.199219 116.398438 61.5 117.976562 61.199219 118.726562 C 60.976562 119.324219 60.074219 119.925781 59.398438 120.074219 C 58.800781 120.148438 57.75 119.773438 57.300781 119.324219 C 56.851562 118.800781 56.625 118.050781 56.773438 117.148438 C 56.925781 115.199219 59.550781 109.5 61.199219 108.449219 C 62.023438 108 63.226562 108.074219 63.824219 108.523438 C 64.425781 108.898438 64.726562 110.925781 64.726562 110.925781 "
+                                clip-rule="nonzero"></path>
+                        </clipPath>
+                    </defs>
+                    <path fill="#ed1c24"
+                        d="M 201.789062 378.242188 L 235.597656 358.742188 L 235.675781 358.742188 L 269.484375 339.242188 L 279.535156 333.445312 L 279.535156 141.464844 L 269.484375 135.667969 L 235.675781 116.171875 L 235.597656 116.171875 L 201.789062 96.671875 L 191.816406 90.921875 L 181.84375 96.671875 L 148.035156 116.171875 L 147.957031 116.171875 L 114.148438 135.667969 L 104.097656 141.464844 L 104.097656 333.445312 L 114.148438 339.242188 L 147.957031 358.742188 L 148.035156 358.742188 L 181.84375 378.242188 L 191.816406 383.992188 Z M 215.59375 324.105469 L 191.816406 337.820312 L 168.039062 324.105469 L 168.058594 324.074219 L 144.304688 310.371094 L 144.304688 164.542969 L 168.058594 150.839844 L 168.039062 150.808594 L 191.816406 137.09375 L 215.59375 150.808594 L 215.574219 150.839844 L 239.332031 164.542969 L 239.332031 310.371094 L 215.574219 324.074219 L 215.59375 324.105469 "
+                        fill-opacity="1" fill-rule="nonzero"></path>
+                    <g clip-path="url(#a15c7ebe79)">
+                        <path fill="#ab0d0d"
+                            d="M 358.261719 287.957031 L 358.316406 287.925781 L 358.316406 96.078125 L 348.1875 90.234375 L 275.046875 48.054688 L 275.066406 48.019531 L 201.867188 5.804688 L 191.816406 0.0078125 L 181.765625 5.804688 L 108.566406 48.019531 L 108.585938 48.054688 L 35.445312 90.234375 L 25.316406 96.078125 L 25.316406 287.925781 L 25.367188 287.957031 L 35.445312 282.144531 L 65.523438 264.796875 L 65.523438 119.0625 L 128.589844 82.691406 L 128.667969 82.691406 L 191.816406 46.273438 L 254.964844 82.691406 L 255.042969 82.691406 L 318.109375 119.0625 L 318.109375 264.796875 L 348.1875 282.144531 L 358.261719 287.957031 "
+                            fill-opacity="1" fill-rule="nonzero"></path>
+                    </g>
+                    <g clip-path="url(#92b9c54d1b)">
+                        <g clip-path="url(#0ee4200467)">
+                            <path fill="#e7191f"
+                                d="M 54.976562 107.773438 L 65.105469 107.773438 L 65.105469 117.601562 L 54.976562 117.601562 Z M 54.976562 107.773438 "
+                                fill-opacity="1" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                    <g clip-path="url(#797295b681)">
+                        <g clip-path="url(#6595017cc0)">
+                            <path fill="#ab0d0d"
+                                d="M 55.875 106.875 L 66.007812 106.875 L 66.007812 116.699219 L 55.875 116.699219 Z M 55.875 106.875 "
+                                fill-opacity="1" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                    <g clip-path="url(#6012a80fa0)">
+                        <g clip-path="url(#54cb4dfc24)">
+                            <path fill="#ab0d0d"
+                                d="M 54.148438 108.601562 L 64.28125 108.601562 L 64.28125 118.425781 L 54.148438 118.425781 Z M 54.148438 108.601562 "
+                                fill-opacity="1" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                    <g clip-path="url(#591a41801c)">
+                        <g clip-path="url(#f736686dc1)">
+                            <path fill="#ab0d0d"
+                                d="M 50.25 105.601562 L 63.898438 105.601562 L 63.898438 122.875 L 50.25 122.875 Z M 50.25 105.601562 "
+                                fill-opacity="1" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                    <g clip-path="url(#2b59e0a0f6)">
+                        <g clip-path="url(#03ae24b048)">
+                            <path fill="#ab0d0d"
+                                d="M 53.699219 105.449219 L 67.800781 105.449219 L 67.800781 123.074219 L 53.699219 123.074219 Z M 53.699219 105.449219 "
+                                fill-opacity="1" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </svg><a class="flex items-center gap-2 px-2 text-xl font-bold tracking-tighter" href="/">Author
+                    Dev.</a>
+            </div>
+            <nav
+                class="text-muted-foreground hover:[&amp;_a]:text-foreground hidden items-center gap-6 text-sm font-medium md:flex [&amp;_a]:transition-colors">
+                <a href="https://user.ui-app.com/dashboard">Dashboard</a><a
+                    href="https://user.ui-app.com/digital-products">Download</a><a
+                    href="https://user.ui-app.com">Login/Register</a><a href="https://support.wromo.com">Support</a>
+            </nav>
+            <div class="ml-auto flex items-center gap-2">
+                <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground border-border relative size-8 shrink-0 border"
+                    data-state="closed">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-store size-4">
+                        <path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"></path>
+                        <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                        <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"></path>
+                        <path d="M2 7h20"></path>
+                        <path
+                            d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7">
+                        </path>
+                    </svg><span class="sr-only">Vendor</span></button><button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground border-border relative size-8 shrink-0 border">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-user size-4">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg><span class="sr-only">Sign in</span></button><button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground border-border relative size-8 shrink-0 border"
+                    data-state="closed" type="button" aria-haspopup="dialog" aria-expanded="false"
+                    aria-controls="radix-:R3qdb:">
+                    <svg class="size-4" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_1730_25270)">
+                            <path
+                                d="M5.33317 14.6668C5.70136 14.6668 5.99984 14.3684 5.99984 14.0002C5.99984 13.632 5.70136 13.3335 5.33317 13.3335C4.96498 13.3335 4.6665 13.632 4.6665 14.0002C4.6665 14.3684 4.96498 14.6668 5.33317 14.6668Z"
+                                stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path
+                                d="M12.6667 14.6668C13.0349 14.6668 13.3333 14.3684 13.3333 14.0002C13.3333 13.632 13.0349 13.3335 12.6667 13.3335C12.2985 13.3335 12 13.632 12 14.0002C12 14.3684 12.2985 14.6668 12.6667 14.6668Z"
+                                stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path
+                                d="M1.3667 1.36719H2.70003L4.47337 9.64719C4.53842 9.95043 4.70715 10.2215 4.95051 10.4138C5.19387 10.606 5.49664 10.7074 5.8067 10.7005H12.3267C12.6301 10.7 12.9244 10.596 13.1607 10.4057C13.3971 10.2154 13.5615 9.95021 13.6267 9.65385L14.7267 4.70052H3.41337"
+                                stroke="currentColor" stroke-width="1.33333" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_1730_25270">
+                                <rect width="16" height="16" fill="white"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg><span class="sr-only">Cart</span>
+                </button>
+            </div>
+        </div>
+        <div class="bg-background sticky top-0 z-20 border-b">
+            <div class="mx-auto max-w-screen-xl px-4">
+                <div class="flex justify-center">
+                    <!--$-->
+                    <form class="relative w-full max-w-2xl">
+                        <div class="relative flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-search text-muted-foreground absolute left-3 top-1/2 size-5 -translate-y-1/2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.3-4.3"></path>
+                            </svg><input type="search"
+                                class="flex w-full border bg-background px-3 py-2 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm h-12 rounded-full pl-12 pr-12 text-base shadow-sm border-primary/20 focus-visible:ring-primary/30"
+                                placeholder="Search for products..." value="" /><button
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 py-2 absolute right-1 top-1/2 -translate-y-1/2 h-10 rounded-full px-4"
+                                type="submit" disabled="">
+                                Search
+                            </button>
+                        </div>
+                    </form>
+                    <!--/$-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="flex-1">
+        <!--$-->
+        <div class="mx-auto flex max-w-screen-xl flex-col gap-8 px-4">
+            <div
+                class="from-muted/20 to-muted/50 relative flex h-25 w-full items-center justify-center overflow-hidden rounded-xl bg-gradient-to-b">
+                <div class="z-10 flex h-full flex-col items-center justify-center gap-2 p-8 text-center">
+                    <h1 class="text-4xl font-bold tracking-tight">Author Dev.</h1>
+                    <p class="text-muted-foreground mb-4 text-lg">
+                        UI-APP.com The most wanted marketplace for digital products
+                    </p>
+                </div>
+            </div>
+            <!--$--><!--$-->
+            <div dir="ltr" class="relative overflow-hidden w-full whitespace-nowrap" style="
+            position: relative;
+            --radix-scroll-area-corner-width: 0px;
+            --radix-scroll-area-corner-height: 0px;
+          ">
+                <style>
+                    [data-radix-scroll-area-viewport] {
+                        scrollbar-width: none;
+                        -ms-overflow-style: none;
+                        -webkit-overflow-scrolling: touch;
+                    }
+
+                    [data-radix-scroll-area-viewport]::-webkit-scrollbar {
+                        display: none;
+                    }
+                </style>
+                <div data-radix-scroll-area-viewport="" class="h-full w-full rounded-[inherit]"
+                    style="overflow: scroll">
+                    <div style="min-width: 100%; display: table">
+                        <div class="flex w-max space-x-4 p-4">
+                            <button
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 text-sm bg-muted">
+                                All</button><button
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 text-sm">
+                                Wordpress</button><button
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 text-sm">
+                                Plugins</button><button
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 text-sm">
+                                design</button><button
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 text-sm">
+                                clothing</button><button
+                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 text-sm">
+                                digital
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/$--><!--/$--><!--$-->
+            <div class="relative mb-8 flex flex-col items-center gap-8">
+                <div class="grid w-full grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="bg-background group">
+                        <a class="block" href="https://ui-app.com/products/prod_Rw9d08DaeUG7v7">
+                            <div
+                                class="ring-border relative aspect-video overflow-hidden rounded-xl ring-1 transition-opacity hover:opacity-90">
+                                <img alt="Identity Register Manager" loading="lazy" width="600" height="338"
+                                    decoding="async" data-nimg="1" class="size-full object-cover"
+                                    style="color: transparent"
+                                    src="https://storage.googleapis.com/media-data-web-glob/image/Agency.png" />
+                            </div>
+                        </a>
+                        <div class="flex items-center gap-2 py-4">
+                            <div class="flex flex-col gap-1 min-w-0">
+                                <a class="font-medium hover:underline truncate" title="Identity Register Manager"
+                                    href="/products/prod_Rw9d08DaeUG7v7">Identity Register Manager</a>
+                                <div class="text-2xl font-bold">$99.00</div>
+                                <a class="text-red-600 hover:text-blue-600" href="https://ui-app.com/vendors/Simiyo%20Identity%20SRL">By
+                                    <!-- -->Simiyo Identity SRL</a>
+                            </div>
+                            <div class="ml-auto">
+                                <div class="flex gap-2">
+                                    <button
+                                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 w-full text-base font-semibold"
+                                        type="button">
+                                        Add to Cart
+                                    </button>
+                                    <form action="" enctype="multipart/form-data" method="POST">
+                                        <input type="hidden" name="$ACTION_REF_6" /><input type="hidden"
+                                            name="$ACTION_6:0"
+                                            value='{"id":"602707a4eb5d1047b0e944e8ab97ce5acdae78e24f","bound":"$@1"}' /><input
+                                            type="hidden" name="$ACTION_6:1" value="[null]" /><input type="hidden"
+                                            name="$ACTION_KEY" value="k438551083" /><input type="hidden" name="priceId"
+                                            value="price_1R2HKAEt31tuBKqWXqDWLyDK" /><input type="hidden"
+                                            name="productId" value="prod_Rw9d08DaeUG7v7" /><input type="hidden"
+                                            name="productName" value="Identity Register Manager" /><input type="hidden"
+                                            name="userId" /><input type="hidden" name="downloadUrl" /><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3"
+                                            type="submit">
+                                            Buy Now
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2 flex items-center gap-2">
+                            <div class="flex items-center gap-2">
+                                <div class="relative size-10 overflow-hidden rounded-full border border-border"
+                                    data-state="closed">
+                                    <img alt="1 Year Achievement" loading="lazy" decoding="async" data-nimg="fill"
+                                        class="object-cover transition-opacity opacity-100" style="
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        color: transparent;
+                      " src="https://api.iconify.design/fluent-emoji:sports-medal.svg?color=%23888888" />
+                                </div>
+                                <div class="relative size-10 overflow-hidden rounded-full border border-border"
+                                    data-state="closed">
+                                    <img alt="Certified Vendor" loading="lazy" decoding="async" data-nimg="fill"
+                                        class="object-cover transition-opacity opacity-100" style="
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        color: transparent;
+                      " src="https://api.iconify.design/fluent-color:shield-checkmark-24.svg?color=%239e4c00" />
+                                </div>
+                                <div class="relative size-10 overflow-hidden rounded-full border border-border"
+                                    data-state="closed">
+                                    <img alt="5 Years Achievement" loading="lazy" decoding="async" data-nimg="fill"
+                                        class="object-cover transition-opacity opacity-100" style="
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        color: transparent;
+                      " src="https://storage.googleapis.com/media-data-web-glob/securtth.webp" />
+                                </div>
+                                <div class="relative size-10 overflow-hidden rounded-full border border-border"
+                                    data-state="closed">
+                                    <img alt="Special Achievement" loading="lazy" decoding="async" data-nimg="fill"
+                                        class="object-cover transition-opacity opacity-100" style="
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        color: transparent;
+                      " src="https://storage.googleapis.com/media-data-web-glob/wordpress_compliance-product.svg " />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-background group">
+                        <a class="block" href="https://ui-app.com/products/prod_RsdwP6yenW1O7Q">
+                            <div
+                                class="ring-border relative aspect-video overflow-hidden rounded-xl ring-1 transition-opacity hover:opacity-90">
+                                <img alt="Ultimate Affiliate Pro - Affiliate Plugin for WordPress" loading="lazy"
+                                    width="600" height="338" decoding="async" data-nimg="1"
+                                    class="size-full object-cover" style="color: transparent"
+                                    src="https://storage.googleapis.com/media-data-web-glob/image/uap-image-preview.jpg" />
+                            </div>
+                        </a>
+                        <div class="flex items-center gap-2 py-4">
+                            <div class="flex flex-col gap-1 min-w-0">
+                                <a class="font-medium hover:underline truncate"
+                                    title="Ultimate Affiliate Pro - Affiliate Plugin for WordPress"
+                                    href="https://ui-app.com/products/prod_RsdwP6yenW1O7Q">Ultimate Affiliate Pro - Affiliate Plugin for
+                                    WordPress</a>
+                                <div class="text-2xl font-bold">$79.00</div>
+                                <a class="text-red-600 hover:text-blue-600" href="https://ui-app.com/vendors/Newq%20SA">By
+                                    <!-- -->Newq SA</a>
+                            </div>
+                            <div class="ml-auto">
+                                <div class="flex gap-2">
+                                    <button
+                                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 w-full text-base font-semibold"
+                                        type="button">
+                                        Add to Cart
+                                    </button>
+                                    <form action="" enctype="multipart/form-data" method="POST">
+                                        <input type="hidden" name="$ACTION_REF_7" /><input type="hidden"
+                                            name="$ACTION_7:0"
+                                            value='{"id":"602707a4eb5d1047b0e944e8ab97ce5acdae78e24f","bound":"$@1"}' /><input
+                                            type="hidden" name="$ACTION_7:1" value="[null]" /><input type="hidden"
+                                            name="$ACTION_KEY" value="k87611266" /><input type="hidden" name="priceId"
+                                            value="price_1QyseBEt31tuBKqWjARXWDn8" /><input type="hidden"
+                                            name="productId" value="prod_RsdwP6yenW1O7Q" /><input type="hidden"
+                                            name="productName"
+                                            value="Ultimate Affiliate Pro - Affiliate Plugin for WordPress" /><input
+                                            type="hidden" name="userId" /><input type="hidden"
+                                            name="downloadUrl" /><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3"
+                                            type="submit">
+                                            Buy Now
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2 flex items-center gap-2">
+                            <div class="flex items-center gap-2">
+                                <div class="relative size-10 overflow-hidden rounded-full border border-border"
+                                    data-state="closed">
+                                    <img alt="5 Years Achievement" loading="lazy" decoding="async" data-nimg="fill"
+                                        class="object-cover transition-opacity opacity-100" style="
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        color: transparent;
+                      " src="https://storage.googleapis.com/media-data-web-glob/securtth.webp" />
+                                </div>
+                                <div class="relative size-10 overflow-hidden rounded-full border border-border"
+                                    data-state="closed">
+                                    <img alt="Special Achievement" loading="lazy" decoding="async" data-nimg="fill"
+                                        class="object-cover transition-opacity opacity-100" style="
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        color: transparent;
+                      " src="https://storage.googleapis.com/media-data-web-glob/wordpress_compliance-product.svg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-background group">
+                        <a class="block" href="/products/prod_RFUpgvzPMpaHl8">
+                            <div
+                                class="ring-border relative aspect-video overflow-hidden rounded-xl ring-1 transition-opacity hover:opacity-90">
+                                <img alt="Basic Next 24" loading="lazy" width="600" height="338" decoding="async"
+                                    data-nimg="1" class="size-full object-cover" style="color: transparent"
+                                    src="https://files.stripe.com/links/MDB8YWNjdF8xR09rNUpFdDMxdHVCS3FXfGZsX2xpdmVfRUR5cDB1WVBBeFpyenRKRE5WakprT0ZI00lUAGm6BJ" />
+                            </div>
+                        </a>
+                        <div class="flex items-center gap-2 py-4">
+                            <div class="flex flex-col gap-1 min-w-0">
+                                <a class="font-medium hover:underline truncate" title="Basic Next 24"
+                                    href="/products/prod_RFUpgvzPMpaHl8">Basic Next 24</a>
+                                <div class="text-2xl font-bold">$10.00</div>
+                            </div>
+                            <div class="ml-auto">
+                                <div class="flex gap-2">
+                                    <button
+                                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 w-full text-base font-semibold"
+                                        type="button">
+                                        Add to Cart
+                                    </button>
+                                    <form action="" enctype="multipart/form-data" method="POST">
+                                        <input type="hidden" name="$ACTION_REF_8" /><input type="hidden"
+                                            name="$ACTION_8:0"
+                                            value='{"id":"602707a4eb5d1047b0e944e8ab97ce5acdae78e24f","bound":"$@1"}' /><input
+                                            type="hidden" name="$ACTION_8:1" value="[null]" /><input type="hidden"
+                                            name="$ACTION_KEY" value="k925595908" /><input type="hidden" name="priceId"
+                                            value="price_1QMzphEt31tuBKqWsmuBNmLL" /><input type="hidden"
+                                            name="productId" value="prod_RFUpgvzPMpaHl8" /><input type="hidden"
+                                            name="productName" value="Basic Next 24" /><input type="hidden"
+                                            name="userId" /><input type="hidden" name="downloadUrl" /><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3"
+                                            type="submit">
+                                            Buy Now
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-background group">
+                        <a class="block" href="/products/prod_RDnMo8jiS4rwie">
+                            <div
+                                class="ring-border relative aspect-video overflow-hidden rounded-xl ring-1 transition-opacity hover:opacity-90">
+                                <img alt="New Out" loading="lazy" width="600" height="338" decoding="async"
+                                    data-nimg="1" class="size-full object-cover" style="color: transparent"
+                                    src="https://files.stripe.com/links/MDB8YWNjdF8xR09rNUpFdDMxdHVCS3FXfGZsX2xpdmVfVkdSTHB0QllEeUJuZEpWZFBGbnJnaGdT006fMvGmF4" />
+                            </div>
+                        </a>
+                        <div class="flex items-center gap-2 py-4">
+                            <div class="flex flex-col gap-1 min-w-0">
+                                <a class="font-medium hover:underline truncate" title="New Out"
+                                    href="/products/prod_RDnMo8jiS4rwie">New Out</a>
+                                <div class="text-2xl font-bold">$121.00</div>
+                            </div>
+                            <div class="ml-auto">
+                                <div class="flex gap-2">
+                                    <button
+                                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 w-full text-base font-semibold"
+                                        type="button">
+                                        Add to Cart
+                                    </button>
+                                    <form action="" enctype="multipart/form-data" method="POST">
+                                        <input type="hidden" name="$ACTION_REF_9" /><input type="hidden"
+                                            name="$ACTION_9:0"
+                                            value='{"id":"602707a4eb5d1047b0e944e8ab97ce5acdae78e24f","bound":"$@1"}' /><input
+                                            type="hidden" name="$ACTION_9:1" value="[null]" /><input type="hidden"
+                                            name="$ACTION_KEY" value="k1544306816" /><input type="hidden" name="priceId"
+                                            value="id121" /><input type="hidden" name="productId"
+                                            value="prod_RDnMo8jiS4rwie" /><input type="hidden" name="productName"
+                                            value="New Out" /><input type="hidden" name="userId" /><input type="hidden"
+                                            name="downloadUrl" /><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3"
+                                            type="submit">
+                                            Buy Now
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-background group">
+                        <a class="block" href="/products/prod_P8KCLYLnhPR0tl">
+                            <div
+                                class="ring-border relative aspect-video overflow-hidden rounded-xl ring-1 transition-opacity hover:opacity-90">
+                                <img alt="Sosoye" loading="lazy" width="600" height="338" decoding="async" data-nimg="1"
+                                    class="size-full object-cover" style="color: transparent"
+                                    src="https://files.stripe.com/links/MDB8YWNjdF8xR09rNUpFdDMxdHVCS3FXfGZsX2xpdmVfcWJpN0xFZkVRUmdkaENjTm91MWFHSXll00RMqyksNU" />
+                            </div>
+                        </a>
+                        <div class="flex items-center gap-2 py-4">
+                            <div class="flex flex-col gap-1 min-w-0">
+                                <a class="font-medium hover:underline truncate" title="Sosoye"
+                                    href="/products/prod_P8KCLYLnhPR0tl">Sosoye</a>
+                                <div class="text-2xl font-bold">$33.00</div>
+                            </div>
+                            <div class="ml-auto">
+                                <div class="flex gap-2">
+                                    <button
+                                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 w-full text-base font-semibold"
+                                        type="button">
+                                        Add to Cart
+                                    </button>
+                                    <form action="" enctype="multipart/form-data" method="POST">
+                                        <input type="hidden" name="$ACTION_REF_10" /><input type="hidden"
+                                            name="$ACTION_10:0"
+                                            value='{"id":"602707a4eb5d1047b0e944e8ab97ce5acdae78e24f","bound":"$@1"}' /><input
+                                            type="hidden" name="$ACTION_10:1" value="[null]" /><input type="hidden"
+                                            name="$ACTION_KEY" value="k85759855" /><input type="hidden" name="priceId"
+                                            value="price_1OK3YYEt31tuBKqWND1ZaqBc" /><input type="hidden"
+                                            name="productId" value="prod_P8KCLYLnhPR0tl" /><input type="hidden"
+                                            name="productName" value="Sosoye" /><input type="hidden"
+                                            name="userId" /><input type="hidden" name="downloadUrl" /><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3"
+                                            type="submit">
+                                            Buy Now
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-background group">
+                        <a class="block" href="/products/prod_NxZX8XVvnImfK1">
+                            <div
+                                class="ring-border relative aspect-video overflow-hidden rounded-xl ring-1 transition-opacity hover:opacity-90">
+                                <img alt="PRO - GPT-3.5 &amp; GPT-4 TURBO CODE PLUS" loading="lazy" width="600"
+                                    height="338" decoding="async" data-nimg="1" class="size-full object-cover"
+                                    style="color: transparent"
+                                    src="https://files.stripe.com/links/MDB8YWNjdF8xR09rNUpFdDMxdHVCS3FXfGZsX2xpdmVfV2R3OTh6Nk5ibHlGS0k5ekpBQ0lIZ2M0003dpk3T4h" />
+                            </div>
+                        </a>
+                        <div class="flex items-center gap-2 py-4">
+                            <div class="flex flex-col gap-1 min-w-0">
+                                <a class="font-medium hover:underline truncate"
+                                    title="PRO - GPT-3.5 &amp; GPT-4 TURBO CODE PLUS"
+                                    href="/products/prod_NxZX8XVvnImfK1">PRO - GPT-3.5 &amp; GPT-4 TURBO CODE PLUS</a>
+                                <div class="text-2xl font-bold">$29.00</div>
+                            </div>
+                            <div class="ml-auto">
+                                <div class="flex gap-2">
+                                    <button
+                                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3 w-full text-base font-semibold"
+                                        type="button">
+                                        Add to Cart
+                                    </button>
+                                    <form action="" enctype="multipart/form-data" method="POST">
+                                        <input type="hidden" name="$ACTION_REF_11" /><input type="hidden"
+                                            name="$ACTION_11:0"
+                                            value='{"id":"602707a4eb5d1047b0e944e8ab97ce5acdae78e24f","bound":"$@1"}' /><input
+                                            type="hidden" name="$ACTION_11:1" value="[null]" /><input type="hidden"
+                                            name="$ACTION_KEY" value="k3569497914" /><input type="hidden" name="priceId"
+                                            value="GPT" /><input type="hidden" name="productId"
+                                            value="prod_NxZX8XVvnImfK1" /><input type="hidden" name="productName"
+                                            value="PRO - GPT-3.5 &amp; GPT-4 TURBO CODE PLUS" /><input type="hidden"
+                                            name="userId" /><input type="hidden" name="downloadUrl" /><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3"
+                                            type="submit">
+                                            Buy Now
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full text-center text-sm text-muted-foreground">
+                    Showing
+                    <!-- -->6<!-- -->
+                    of
+                    <!-- -->10<!-- -->
+                    products
+                </div>
+            </div>
+            <div class="flex items-center justify-center space-x-6 my-8">
+                <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                    disabled="">
+                    <a class="flex items-center" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-left h-4 w-4 mr-2">
+                            <path d="m15 18-6-6 6-6"></path>
+                        </svg>Previous</a></button><span class="text-sm">Page
+                    <!-- -->1<!-- -->
+                    of
+                    <!-- -->2</span><button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                    <a class="flex items-center" href="/?page=2">Next<svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-right h-4 w-4 ml-2">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg></a>
+                </button>
+            </div>
+            <!--/$-->
+        </div>
+        <!--/$-->
+    </main>
+    <footer class="border-t mt-auto">
+        <div class="mx-auto max-w-screen-xl px-4 py-8">
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                <div>
+                    <h2 class="text-lg font-medium">About Us</h2>
+                    <ul class="mt-4 space-y-2 text-sm text-muted-foreground">
+                        <li>
+                            <a href="https://company.wromo.com" class="hover:text-foreground transition">Company</a>
+                        </li>
+                        <li>
+                            <a href="https://company.wromo.com" class="hover:text-foreground transition">Team</a>
+                        </li>
+                        <li>
+                            <a href="https://company.wromo.com" class="hover:text-foreground transition">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-lg font-medium">Customer Service</h2>
+                    <ul class="mt-4 space-y-2 text-sm text-muted-foreground">
+                        <li>
+                            <a href="https://support.wromo.com" class="hover:text-foreground transition">Contact</a>
+                        </li>
+                        <li>
+                            <a href="https://ui-app.com" class="hover:text-foreground transition">Shipping</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-foreground transition">Returns</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-lg font-medium">Legal</h2>
+                    <ul class="mt-4 space-y-2 text-sm text-muted-foreground">
+                        <li>
+                            <a href="https://ui-app.com" class="hover:text-foreground transition">Terms</a>
+                        </li>
+                        <li>
+                            <a href="https://ui-app.com" class="hover:text-foreground transition">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="https://ui-app.com" class="hover:text-foreground transition">Cookie Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-lg font-medium">Newsletter</h2>
+                    <p class="mt-4 text-sm text-muted-foreground">
+                        Subscribe to our newsletter for updates and exclusive offers.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
+                <p>© 2025 Author Dev. by UI-APP.com All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none">
+        <ol tabindex="-1"
+            class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]">
+        </ol>
+    </div>
+    <script src="https://ui-app.com/_next/static/chunks/webpack-e0711c99f8175119.js" async=""></script>
+    <script>
+        (self.__next_f = self.__next_f || []).push([0]);
+    </script>
+    <script>
+        self.__next_f.push([
+            1,
+            '1:"$Sreact.fragment"\n2:I[1278,["751","static/chunks/751-704d03f6384cc4a8.js","273","static/chunks/273-57e5242b48751e07.js","235","static/chunks/235-4a75e309d18aff6c.js","355","static/chunks/355-8ad1cdf67285d550.js","870","static/chunks/870-937fdced427dbe39.js","177","static/chunks/app/layout-aef64f39931b99da.js"],"TooltipProvider"]\n3:I[4124,["751","static/chunks/751-704d03f6384cc4a8.js","273","static/chunks/273-57e5242b48751e07.js","235","static/chunks/235-4a75e309d18aff6c.js","355","static/chunks/355-8ad1cdf67285d550.js","870","static/chunks/870-937fdced427dbe39.js","177","static/chunks/app/layout-aef64f39931b99da.js"],"SiteHeader"]\n4:I[3266,[],""]\n5:I[5648,[],""]\n6:I[6710,["751","static/chunks/751-704d03f6384cc4a8.js","273","static/chunks/273-57e5242b48751e07.js","235","static/chunks/235-4a75e309d18aff6c.js","355","static/chunks/355-8ad1cdf67285d550.js","870","static/chunks/870-937fdced427dbe39.js","177","static/chunks/app/layout-aef64f39931b99da.js"],"Toaster"]\n8:I[7915,[],"OutletBoundary"]\na:I[7915,[],"MetadataBoundary"]\nc:I[7915,[],"ViewportBoundary"]\ne:I[7429,[],""]\n:HL["/_next/static/media/a34f9d1faa5f3315-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]\n:HL["https://ui-app.com/_next/static/css/d710757221f9990f.css","style"]\n'
+        ]);
+    </script>
+    <script>
+        self.__next_f.push([
+            1,
+            '0:{"P":null,"b":"4JiMj9YoekkprmLq9gB5_","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"https://ui-app.com/_next/static/css/d710757221f9990f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"apple-touch-icon","sizes":"180x180","href":"/apple-touch-icon.png"}],["$","link",null,{"rel":"icon","type":"image/png","sizes":"192x192","href":"/favicon-192x192.png"}],["$","link",null,{"rel":"icon","type":"image/png","sizes":"96x96","href":"/favicon-96x96.png"}],["$","link",null,{"rel":"icon","type":"image/png","sizes":"32x32","href":"/favicon-32x32.png"}],["$","link",null,{"rel":"icon","type":"image/png","sizes":"16x16","href":"/favicon-16x16.png"}],["$","link",null,{"rel":"manifest","href":"/site.webmanifest"}],["$","meta",null,{"name":"msapplication-TileColor","content":"#ffffff"}],["$","meta",null,{"name":"theme-color","content":"#ffffff"}],["$","script",null,{"src":"https://user.ui-app.com/shop-auth.js","async":true}]]}],["$","body",null,{"className":"flex min-h-svh flex-col antialiased __className_d65c78","suppressHydrationWarning":true,"children":["$","$L2",null,{"delayDuration":0,"children":[["$","$L3",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L4",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[],[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\\"Segoe UI\\",Roboto,Helvetica,Arial,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-auto","children":["$","div",null,{"className":"mx-auto max-w-screen-xl px-4 py-8","children":[["$","div",null,{"className":"grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4","children":[["$","div",null,{"children":[["$","h2",null,{"className":"text-lg font-medium","children":"About Us"}],["$","ul",null,{"className":"mt-4 space-y-2 text-sm text-muted-foreground","children":[["$","li",null,{"children":["$","a",null,{"href":"#","className":"hover:text-foreground transition","children":"Company"}]}],["$","li",null,{"children":["$","a",null,{"href":"#","className":"hover:text-foreground transition","children":"Team"}]}],["$","li",null,{"children":["$","a",null,{"href":"#","className":"hover:text-foreground transition","children":"Careers"}]}]]}]]}],["$","div",null,{"children":[["$","h2",null,{"className":"text-lg font-medium","children":"Customer Service"}],["$","ul",null,{"className":"mt-4 space-y-2 text-sm text-muted-foreground","children":[["$","li",null,{"children":["$","a",null,{"href":"#","className":"hover:text-foreground transition","children":"Contact"}]}],["$","li",null,{"children":["$","a",null,{"href":"#","className":"hover:text-foreground transition","children":"Shipping"}]}],["$","li",null,{"children":["$","a",null,{"href":"#","className":"hover:text-foreground transition","children":"Returns"}]}]]}]]}],["$","div",null,{"children":[["$","h2",null,{"className":"text-lg font-medium","children":"Legal"}],["$","ul",null,{"className":"mt-4 space-y-2 text-sm text-muted-foreground","children":[["$","li",null,{"children":["$","a",null,{"href":"#","className":"hover:text-foreground transition","children":"Terms"}]}],["$","li",null,{"children":["$","a",null,{"href":"#","className":"hover:text-foreground transition","children":"Privacy"}]}],["$","li",null,{"children":["$","a",null,{"href":"#","className":"hover:text-foreground transition","children":"Cookie Policy"}]}]]}]]}],["$","div",null,{"children":[["$","h2",null,{"className":"text-lg font-medium","children":"Newsletter"}],["$","p",null,{"className":"mt-4 text-sm text-muted-foreground","children":"Subscribe to our newsletter for updates and exclusive offers."}]]}]]}],["$","div",null,{"className":"mt-8 border-t pt-8 text-center text-sm text-muted-foreground","children":["$","p",null,{"children":"© 2025 Author Dev. by UI-APP.com All rights reserved."}]}]]}]}],["$","$L6",null,{}]]}]}]]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L7",null,["$","$L8",null,{"children":"$L9"}]]}],{},null,false]},[["$","div","l",{"className":"mx-auto flex max-w-screen-xl flex-col gap-8 px-4","children":[["$","div",null,{"className":"from-muted/20 to-muted/50 h-96 w-full animate-pulse rounded-xl bg-gradient-to-b"}],["$","div",null,{"className":"h-16 w-full animate-pulse rounded-lg bg-muted"}],["$","div",null,{"className":"grid w-full grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4","children":[["$","div","0",{"className":"bg-muted aspect-square rounded-xl"}],["$","div","1",{"className":"bg-muted aspect-square rounded-xl"}],["$","div","2",{"className":"bg-muted aspect-square rounded-xl"}],["$","div","3",{"className":"bg-muted aspect-square rounded-xl"}],["$","div","4",{"className":"bg-muted aspect-square rounded-xl"}],["$","div","5",{"className":"bg-muted aspect-square rounded-xl"}],["$","div","6",{"className":"bg-muted aspect-square rounded-xl"}],["$","div","7",{"className":"bg-muted aspect-square rounded-xl"}]]}]]}],[],[]],false],["$","$1","h",{"children":[null,["$","$1","29qe4imkj7F5xwEp3LS8G",{"children":[["$","$La",null,{"children":"$Lb"}],["$","$Lc",null,{"children":"$Ld"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]]}],false]],"m":"$undefined","G":["$e","$undefined"],"s":false,"S":false}\n'
+        ]);
+    </script>
+    <script>
+        self.__next_f.push([
+            1,
+            'd:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]\nb:[["$","meta","0",{"charSet":"utf-8"}],["$","link","1",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"32x32"}]]\n9:null\n'
+        ]);
+    </script>
+    <next-route-announcer style="position: absolute"></next-route-announcer>
+    <script>
+        self.__next_f.push([
+            1,
+            'f:"$Sreact.suspense"\n10:I[1898,["751","static/chunks/751-704d03f6384cc4a8.js","273","static/chunks/273-57e5242b48751e07.js","235","static/chunks/235-4a75e309d18aff6c.js","355","static/chunks/355-8ad1cdf67285d550.js","927","static/chunks/927-737a254a2c3ff9f0.js","974","static/chunks/app/page-d56b3544995c76a1.js"],"CategoryNav"]\n11:I[5751,["751","static/chunks/751-704d03f6384cc4a8.js","273","static/chunks/273-57e5242b48751e07.js","235","static/chunks/235-4a75e309d18aff6c.js","355","static/chunks/355-8ad1cdf67285d550.js","927","static/chunks/927-737a254a2c3ff9f0.js","974","static/chunks/app/page-d56b3544995c76a1.js"],""]\n12:I[6688,["751","static/chunks/751-704d03f6384cc4a8.js","273","static/chunks/273-57e5242b48751e07.js","235","static/chunks/235-4a75e309d18aff6c.js","355","static/chunks/355-8ad1cdf67285d550.js","927","static/chunks/927-737a254a2c3ff9f0.js","974","static/chunks/app/page-d56b3544995c76a1.js"],"Image"]\n13:I[6377,["751","static/chunks/751-704d03f6384cc4a8.js","273","static/chunks/273-57e5242b48751e07.js","235","static/chunks/235-4a75e309d18aff6c.js","355","static/chunks/355-8ad1cdf67285d550.js","927","static/chunks/927-737a254a2c3ff9f0.js","974","static/chunks/app/page-d56b3544995c76a1.js"],"ProductBuyForm"]\n14:I[9243,["751","static/chunks/751-704d03f6384cc4a8.js","273","static/chunks/273-57e5242b48751e07.js","235","static/chunks/235-4a75e309d18aff6c.js","355","static/chunks/355-8ad1cdf67285d550.js","927","static/chunks/927-737a254a2c3ff9f0.js","974","static/chunks/app/page-d56b3544995c76a1.js"],"VendorIcons"]\n'
+        ]);
+    </script>
+    <script>
+        self.__next_f.push([
+            1,
+            '7:["$","div",null,{"className":"mx-auto flex max-w-screen-xl flex-col gap-8 px-4","children":[["$","div",null,{"className":"from-muted/20 to-muted/50 relative flex h-25 w-full items-center justify-center overflow-hidden rounded-xl bg-gradient-to-b","children":["$","div",null,{"className":"z-10 flex h-full flex-col items-center justify-center gap-2 p-8 text-center","children":[["$","h1",null,{"className":"text-4xl font-bold tracking-tight","children":"Author Dev."}],["$","p",null,{"className":"text-muted-foreground mb-4 text-lg","children":"UI-APP.com The most wanted marketplace for digital products"}]]}]}],["$","$f",null,{"fallback":["$","div",null,{"children":"Loading categories..."}],"children":["$","$L10",null,{"categories":["Wordpress","Plugins","design","clothing","digital"],"currentCategory":"$undefined"}]}],["$","$f",null,{"fallback":["$","div",null,{"children":"Loading products..."}],"children":[["$","div",null,{"className":"relative mb-8 flex flex-col items-center gap-8","children":[["$","div",null,{"className":"grid w-full grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","prod_Rw9d08DaeUG7v7",{"className":"bg-background group","children":[["$","$L11",null,{"href":"/products/prod_Rw9d08DaeUG7v7","className":"block","children":["$","div",null,{"className":"ring-border relative aspect-video overflow-hidden rounded-xl ring-1 transition-opacity hover:opacity-90","children":["$","$L12",null,{"src":"https://storage.googleapis.com/media-data-web-glob/image/Agency.png","alt":"Identity Register Manager","width":600,"height":338,"className":"size-full object-cover"}]}]}],["$","div",null,{"className":"flex items-center gap-2 py-4","children":[["$","div",null,{"className":"flex flex-col gap-1 min-w-0","children":[["$","$L11",null,{"href":"/products/prod_Rw9d08DaeUG7v7","className":"font-medium hover:underline truncate","title":"Identity Register Manager","children":"Identity Register Manager"}],["$","div",null,{"className":"text-2xl font-bold","children":"$$99.00"}],["$","$L11",null,{"href":"/vendors/Simiyo%20Identity%20SRL","className":"text-red-600 hover:text-blue-600","children":["By ","Simiyo Identity SRL"]}]]}],["$","div",null,{"className":"ml-auto","children":["$","$L13",null,{"id":"prod_Rw9d08DaeUG7v7","priceId":"price_1R2HKAEt31tuBKqWXqDWLyDK","name":"Identity Register Manager","price":99,"image":"https://storage.googleapis.com/media-data-web-glob/image/Agency.png"}]}]]}],["$","div",null,{"className":"mt-2 flex items-center gap-2","children":["$","$L14",null,{"icons":[{"src":"https://api.iconify.design/fluent-emoji:sports-medal.svg?color=%23888888","alt":"1 Year Achievement","tooltip":"1 Year Vendor Achievement","isActive":true},{"src":"https://api.iconify.design/fluent-color:shield-checkmark-24.svg?color=%239e4c00","alt":"Certified Vendor","tooltip":"Certified Vendor Status","isActive":true},{"src":"https://storage.googleapis.com/media-data-web-glob/securtth.webp","alt":"5 Years Achievement","tooltip":"5 Years Vendor Achievement","isActive":true},{"src":"https://storage.googleapis.com/media-data-web-glob/wordpress_compliance-product.svg ","alt":"Special Achievement","tooltip":"Special Vendor Achievement","isActive":true}]}]}]]}],["$","div","prod_RsdwP6yenW1O7Q",{"className":"bg-background group","children":[["$","$L11",null,{"href":"/products/prod_RsdwP6yenW1O7Q","className":"block","children":["$","div",null,{"className":"ring-border relative aspect-video overflow-hidden rounded-xl ring-1 transition-opacity hover:opacity-90","children":["$","$L12",null,{"src":"https://storage.googleapis.com/media-data-web-glob/image/uap-image-preview.jpg","alt":"Ultimate Affiliate Pro - Affiliate Plugin for WordPress","width":600,"height":338,"className":"size-full object-cover"}]}]}],["$","div",null,{"className":"flex items-center gap-2 py-4","children":[["$","div",null,{"className":"flex flex-col gap-1 min-w-0","children":[["$","$L11",null,{"href":"/products/prod_RsdwP6yenW1O7Q","className":"font-medium hover:underline truncate","title":"Ultimate Affiliate Pro - Affiliate Plugin for WordPress","children":"Ultimate Affiliate Pro - Affiliate Plugin for WordPress"}],["$","div",null,{"className":"text-2xl font-bold","children":"$$79.00"}],["$","$L11",null,{"href":"/vendors/Newq%20SA","className":"text-red-600 hover:text-blue-600","children":["By ","Newq SA"]}]]}],["$","div",null,{"className":"ml-auto","children":["$","$L13",null,{"id":"prod_RsdwP6yenW1O7Q","priceId":"price_1QyseBEt31tuBKqWjARXWDn8","name":"Ultimate Affiliate Pro - Affiliate Plugin for WordPress","price":79,"image":"https://storage.googleapis.com/media-data-web-glob/image/uap-image-preview.jpg"}]}]]}],["$","div",null,{"className":"mt-2 flex items-center gap-2","children":["$","$L14",null,{"icons":[{"src":"https://storage.googleapis.com/media-data-web-glob/securtth.webp","alt":"5 Years Achievement","tooltip":"5 Years Vendor Achievement","isActive":true},{"src":"https://storage.googleapis.com/media-data-web-glob/wordpress_compliance-product.svg","alt":"Special Achievement","tooltip":"Special Vendor Achievement","isActive":true}]}]}]]}],["$","div","prod_RFUpgvzPMpaHl8",{"className":"bg-background group","children":[["$","$L11",null,{"href":"/products/prod_RFUpgvzPMpaHl8","className":"block","children":["$","div",null,{"className":"ring-border relative aspect-video overflow-hidden rounded-xl ring-1 transition-opacity hover:opacity-90","children":["$","$L12",null,{"src":"https://files.stripe.com/links/MDB8YWNjdF8xR09rNUpFdDMxdHVCS3FXfGZsX2xpdmVfRUR5cDB1WVBBeFpyenRKRE5WakprT0ZI00lUAGm6BJ","alt":"Basic Next 24","width":600,"height":338,"className":"size-full object-cover"}]}]}],["$","div",null,{"className":"flex items-center gap-2 py-4","children":[["$","div",null,{"className":"flex flex-col gap-1 min-w-0","children":[["$","$L11",null,{"href":"/products/prod_RFUpgvzPMpaHl8","className":"font-medium hover:underline truncate","title":"Basic Next 24","children":"Basic Next 24"}],["$","div",null,{"className":"text-2xl font-bold","children":"$$10.00"}],"$undefined"]}],["$","div",null,{"className":"ml-auto","children":["$","$L13",null,{"id":"prod_RFUpgvzPMpaHl8","priceId":"price_1QMzphEt31tuBKqWsmuBNmLL","name":"Basic Next 24","price":10,"image":"https://files.stripe.com/links/MDB8YWNjdF8xR09rNUpFdDMxdHVCS3FXfGZsX2xpdmVfRUR5cDB1WVBBeFpyenRKRE5WakprT0ZI00lUAGm6BJ"}]}]]}],false]}],["$","div","prod_RDnMo8jiS4rwie",{"className":"bg-background group","children":[["$","$L11",null,{"href":"/products/prod_RDnMo8jiS4rwie","className":"block","children":["$","div",null,{"className":"ring-border relative aspect-video overflow-hidden rounded-xl ring-1 transition-opacity hover:opacity-90","children":["$","$L12",null,{"src":"https://files.stripe.com/links/MDB8YWNjdF8xR09rNUpFdDMxdHVCS3FXfGZsX2xpdmVfVkdSTHB0QllEeUJuZEpWZFBGbnJnaGdT006fMvGmF4","alt":"New Out","width":600,"height":338,"className":"size-full object-cover"}]}]}],["$","div",null,{"className":"flex items-center gap-2 py-4","children":[["$","div",null,{"className":"flex flex-col gap-1 min-w-0","children":[["$","$L11",null,{"href":"/products/prod_RDnMo8jiS4rwie","className":"font-medium hover:underline truncate","title":"New Out","children":"New Out"}],["$","div",null,{"className":"text-2xl font-bold","children":"$$121.00"}],"$undefined"]}],["$","div",null,{"className":"ml-auto","children":["$","$L13",null,{"id":"prod_RDnMo8jiS4rwie","priceId":"id121","name":"New Out","price":121,"image":"https://files.stripe.com/links/MDB8YWNjdF8xR09rNUpFdDMxdHVCS3FXfGZsX2xpdmVfVkdSTHB0QllEeUJuZEpWZFBGbnJnaGdT006fMvGmF4"}]}]]}],false]}],["$","div","prod_P8KCLYLnhPR0tl",{"className":"bg-background group","children":[["$","$L11",null,{"href":"/products/prod_P8KCLYLnhPR0tl","className":"block","children":["$","div",null,{"className":"ring-border relative aspect-video overflow-hidden rounded-xl ring-1 transition-opacity hover:opacity-90","children":["$","$L12",null,{"src":"https://files.stripe.com/links/MDB8YWNjdF8xR09rNUpFdDMxdHVCS3FXfGZsX2xpdmVfcWJpN0xFZkVRUmdkaENjTm91MWFHSXll00RMqyksNU","alt":"Sosoye","width":600,"height":338,"className":"size-full object-cover"}]}]}],["$","div",null,{"className":"flex items-center gap-2 py-4","children":[["$","div",null,{"className":"flex flex-col gap-1 min-w-0","children":[["$","$L11",null,{"href":"/products/prod_P8KCLYLnhPR0tl","className":"font-medium hover:underline truncate","title":"Sosoye","children":"Sosoye"}],["$","div",null,{"className":"text-2xl font-bold","children":"$$33.00"}],"$undefined"]}],["$","div",null,{"className":"ml-auto","children":["$","$L13",null,{"id":"prod_P8KCLYLnhPR0tl","priceId":"price_1OK3YYEt31tuBKqWND1ZaqBc","name":"Sosoye","price":33,"image":"https://files.stripe.com/links/MDB8YWNjdF8xR09rNUpFdDMxdHVCS3FXfGZsX2xpdmVfcWJpN0xFZkVRUmdkaENjTm91MWFHSXll00RMqyksNU"}]}]]}],false]}],["$","div","prod_NxZX8XVvnImfK1",{"className":"bg-background group","children":[["$","$L11",null,{"href":"/products/prod_NxZX8XVvnImfK1","className":"block","children":["$","div",null,{"className":"ring-border relative aspect-video overflow-hidden rounded-xl ring-1 transition-opacity hover:opacity-90","children":["$","$L12",null,{"src":"https://files.stripe.com/links/MDB8YWNjdF8xR09rNUpFdDMxdHVCS3FXfGZsX2xpdmVfV2R3OTh6Nk5ibHlGS0k5ekpBQ0lIZ2M0003dpk3T4h","alt":"PRO - GPT-3.5 \u0026 GPT-4 TURBO CODE PLUS","width":600,"height":338,"className":"size-full object-cover"}]}]}],["$","div",null,{"className":"flex items-center gap-2 py-4","children":[["$","div",null,{"className":"flex flex-col gap-1 min-w-0","children":[["$","$L11",null,{"href":"/products/prod_NxZX8XVvnImfK1","className":"font-medium hover:underline truncate","title":"PRO - GPT-3.5 \u0026 GPT-4 TURBO CODE PLUS","children":"PRO - GPT-3.5 \u0026 GPT-4 TURBO CODE PLUS"}],["$","div",null,{"className":"text-2xl font-bold","children":"$$29.00"}],"$undefined"]}],["$","div",null,{"className":"ml-auto","children":["$","$L13",null,{"id":"prod_NxZX8XVvnImfK1","priceId":"GPT","name":"PRO - GPT-3.5 \u0026 GPT-4 TURBO CODE PLUS","price":29,"image":"https://files.stripe.com/links/MDB8YWNjdF8xR09rNUpFdDMxdHVCS3FXfGZsX2xpdmVfV2R3OTh6Nk5ibHlGS0k5ekpBQ0lIZ2M0003dpk3T4h"}]}]]}],false]}]]}],["$","div",null,{"className":"w-full text-center text-sm text-muted-foreground","children":["Showing ",6," of ",10," products"]}]]}],["$","div",null,{"className":"flex items-center justify-center space-x-6 my-8","children":[["$","button",null,{"className":"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [\u0026_svg]:pointer-events-none [\u0026_svg]:size-4 [\u0026_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3","ref":"$undefined","disabled":true,"children":["$","$L11",null,{"href":"#","className":"flex items-center","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-left h-4 w-4 mr-2","children":[["$","path","1wnfg3",{"d":"m15 18-6-6 6-6"}],"$undefined"]}],"Previous"]}]}],["$","span",null,{"className":"text-sm","children":["Page ",1," of ",2]}],["$","button",null,{"className":"inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [\u0026_svg]:pointer-events-none [\u0026_svg]:size-4 [\u0026_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3","ref":"$undefined","disabled":false,"children":["$","$L11",null,{"href":"/?page=2","className":"flex items-center","children":["Next",["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-chevron-right h-4 w-4 ml-2","children":[["$","path","mthhwq",{"d":"m9 18 6-6-6-6"}],"$undefined"]}]]}]}]]}]]}]]}]\n'
+        ]);
+    </script>
+    <script src="https://ui-app.com/_next/static/chunks/927-737a254a2c3ff9f0.js" async=""></script>
+    <script src="https://ui-app.com/_next/static/chunks/app/page-d56b3544995c76a1.js" async=""></script>
+    <script>
+        $RS = function (a, b) {
+            a = document.getElementById(a);
+            b = document.getElementById(b);
+            for (a.parentNode.removeChild(a); a.firstChild;)
+                b.parentNode.insertBefore(a.firstChild, b);
+            b.parentNode.removeChild(b);
+        };
+        $RS("S:1", "P:1");
+    </script>
+    <script>
+        $RC = function (b, c, e) {
+            c = document.getElementById(c);
+            c.parentNode.removeChild(c);
+            var a = document.getElementById(b);
+            if (a) {
+                b = a.previousSibling;
+                if (e) (b.data = "$!"), a.setAttribute("data-dgst", e);
+                else {
+                    e = b.parentNode;
+                    a = b.nextSibling;
+                    var f = 0;
+                    do {
+                        if (a && 8 === a.nodeType) {
+                            var d = a.data;
+                            if ("/$" === d)
+                                if (0 === f) break;
+                                else f--;
+                            else ("$" !== d && "$?" !== d && "$!" !== d) || f++;
+                        }
+                        d = a.nextSibling;
+                        e.removeChild(a);
+                        a = d;
+                    } while (a);
+                    for (; c.firstChild;) e.insertBefore(c.firstChild, a);
+                    b.data = "$";
+                }
+                b._reactRetry && b._reactRetry();
+            }
+        };
+        $RC("B:0", "S:0");
+    </script>
+    <script>
+        $RS("S:3", "P:3");
+    </script>
+    <script>
+        $RS("S:4", "P:4");
+    </script>
+    <script>
+        $RS("S:5", "P:5");
+    </script>
+    <script>
+        $RS("S:6", "P:6");
+    </script>
+    <script>
+        $RS("S:7", "P:7");
+    </script>
+    <script>
+        $RS("S:8", "P:8");
+    </script>
+    <script>
+        $RC("B:2", "S:2");
+    </script>
+</body>
+
+</html>
