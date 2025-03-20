@@ -1,0 +1,46 @@
+app > api > proxy-checkout > route.ts
+components > cart.tsx
+app > success > page.tsx
+app > success > loading.tsx
+components > success-content.tsx
+
+I've implemented a server-side proxy approach to solve the CORS issues you're experiencing. 
+
+1. **Created a Proxy API Route**:
+
+1. Added a new `/api/proxy-checkout` route in your main application
+2. This route forwards requests to the checkout server and returns the response
+3. Since this request is made server-to-server, it avoids CORS restrictions
+
+
+
+2. **Updated the Cart Component**:
+
+1. Modified the `handleCheckout` function to use the proxy API instead of directly calling the external checkout server
+2. Added loading state to disable the checkout button during processing
+3. Added error handling with toast notifications
+4. Added session storage to track pending checkouts
+
+
+
+3. **Updated the Success Page**:
+
+1. Made it a client component to access the cart state
+2. Added logic to clear the cart after a successful checkout
+3. Updated to work with just the session ID
+
+
+
+## Why This Approach Works
+
+1. **Avoids CORS Issues**: By using a server-side proxy, we avoid the browser's CORS restrictions entirely
+2. **Maintains Separation of Concerns**: The checkout logic still happens on the external server
+3. **Improves User Experience**: Added loading states and better error handling
+4. **Ensures Cart Cleanup**: The cart is properly cleared after a successful checkout
+
+
+This approach should resolve the CORS issues while maintaining the separation between your main application and the checkout service. The proxy API route acts as a bridge between the two, handling the communication in a way that avoids browser restrictions.
+
+Please make sure to add the following environment variables to your project:
+
+STRIPE_SECRET_KEY STRIPE_WEBHOOK_SECRET DASHBOARD_WEBHOOK_URL DASHBOARD_API_KEY GOOGLE_PSE_API_KEY GOOGLE_PSE_CX
